@@ -1,6 +1,6 @@
 # Bash script for automated WordPress backup
 
-In WordPress lots of options to take them back up. There are some surprising plugins and some hosting providers have separate packages for backup management.
+WordPress has lots of options to take a backup. There are some surprising plugins, and some hosting providers have separate packages for backup management.
 
 But here, I have prepared the small bash script for taking the WordPress backup. The script will take the backup of our website files and database daily. The backup will be stored in compressed format.
 
@@ -56,6 +56,45 @@ cd
 exit
 ~~~
 
-We have to create a cron job Once in daily in our server. The backup dcript will create a backup file in the BACKUP_DIR directory. The Backup directory location is /root/backup.
+The backup script will create a backup file in the BACKUP_DIR directory. The Backup directory location is /root/backup.
+
+
+> We can create a daily backup using a corn job.
+
+First please upload the script to your server and saved it to the file in .sh format. Then give the execution permission to the file
+
+eg:  I have uploaded the script to abhiraj.sh file in the /root location. Then gave the execute permission 
+
+
+~~~ 
+ cd /root/
+ 
+ vi abhiraj.sh
+ 
+ chmod +x abhiraj.sh
+ ~~~
+ 
+
+> Automation Step Two: CRON
+
+CRON is a task scheduler for Linux. To add a task to the CRON scheduler, you simply add a line to the "crontab". 
+
+~~~
+crontab -e
+~~~
+
+This will open up the CRON file in your text editor. Please add the below content in the file and save it.
+
+~~~
+0 1 * * * /root/abhiraj.sh
+~~~
+
+The script will run automatically and take the backup in every day 1 AM.
+
+
+
+
+
+
 
 
