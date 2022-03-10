@@ -53,7 +53,6 @@ find . -type f -mtime +7 -exec rm -f {} \;
 
 cd
 
-exit
 ~~~
 
 The backup script will create a backup file in the BACKUP_DIR directory. The Backup directory location is /root/backup.
