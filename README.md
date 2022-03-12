@@ -57,8 +57,8 @@ cd
 
 The backup script will create a backup file in the BACKUP_DIR directory. The Backup directory location is /root/backup.
 
-
-> We can create a daily backup using a corn job.
+-----
+## We can create a daily backup using a corn job.
 
 First please upload the script to your server and saved it to the file in .sh format. Then give the execution permission to the file
 
@@ -73,8 +73,8 @@ eg:  I have uploaded the script to abhiraj.sh file in the /root location. Then g
  chmod +x abhiraj.sh
  ~~~
  
-
-> Automation Step Two: CRON
+-----
+## Automation Step Two: CRON
 
 CRON is a task scheduler for Linux. To add a task to the CRON scheduler, you simply add a line to the "crontab". 
 
@@ -92,8 +92,8 @@ The script will run automatically and take the backup in every day 1 AM.
 
 
 
+### ⚙️ Connect with Me
 
-
-
-
-
+<p align="center">
+ <a href="https://www.instagram.com/_r.e.b.e.l.z_33/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/abhiraj-parthan-82038b191"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a> 
